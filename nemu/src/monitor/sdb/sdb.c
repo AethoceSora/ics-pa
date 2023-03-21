@@ -59,7 +59,7 @@ static int cmd_si(char *args){
   if (steps>0)
   {
     cpu_exec(steps);
-    printf("step into %d", steps);
+    printf("step into %d \n", steps);
   }
   
   else printf("wrong input\n");
