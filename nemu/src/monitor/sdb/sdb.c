@@ -52,7 +52,6 @@ static int cmd_si(char *args){
   if (args != NULL)
   {
     char *steps = strtok(args, " ");
-    printf(&steps);
   }
   cpu_exec(n);
   return 0;
