@@ -49,7 +49,7 @@ static int cmd_c(char *args) {
 
 static int cmd_si(char *args){
   cpu_exec(args);
-  int steps;
+  int steps=0;
   sscanf(args,"%d",steps);
   printf(steps);
   return 0;
