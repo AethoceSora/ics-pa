@@ -49,7 +49,7 @@ static int cmd_c(char *args) {
 
 static int cmd_si(char *args){
   printf(args);
-  cpu_exec(n);
+  cpu_exec(1);
   return 0;
 }
 
