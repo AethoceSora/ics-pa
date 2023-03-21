@@ -48,10 +48,22 @@ static int cmd_c(char *args) {
 }
 
 static int cmd_si(char *args){
+  if (args == NULL)   
+  {
+    cpu_exec(1);
+  }
+  
   int steps=0;
   sscanf(args,"%d",&steps);
-  printf("%d",steps);
-//  cpu_exec(steps);
+
+  if (steps>0)
+  {
+    cpu_exec(steps);
+    printf("step into %d", steps);
+  }
+  
+  else printf("wrong input\n");
+
   return 0;
 }
 
