@@ -53,7 +53,7 @@ static int cmd_si(char *args){
   if (args != NULL)
   {
     steps = strtok(args, " ");
-    printf(steps);
+    printf(*steps);
   }
   cpu_exec(n);
   return 0;
