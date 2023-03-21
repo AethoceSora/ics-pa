@@ -49,10 +49,11 @@ static int cmd_c(char *args) {
 
 static int cmd_si(char *args){
   int n = 1;
+  int *steps;
   if (args != NULL)
   {
-    char steps = strtok(args, " ");
-    steps++;
+    steps = strtok(args, " ");
+    printf(steps);
   }
   cpu_exec(n);
   return 0;
